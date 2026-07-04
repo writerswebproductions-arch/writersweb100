@@ -16,11 +16,6 @@ public class SiteController {
         return "contact";
     }
 
-    @GetMapping("/blog")
-    public String blog() {
-        return "blog";
-    }
-
     @GetMapping("/faq")
     public String faq() {
         return "faq";
