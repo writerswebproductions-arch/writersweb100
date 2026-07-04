@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | WRITERS WEB</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+
+<section class="section">
+
+    <div class="section-title">
+        <h2>Admin Dashboard</h2>
+    </div>
+
+    <div class="portfolio-section">
+
+        <div class="portfolio-card">
+            <h3>Blog Posts</h3>
+
+            <p>
+                Create, edit and publish articles.
+            </p>
+
+            <a href="/admin/posts" class="btn">
+                Manage Posts
+            </a>
+        </div>
+
+        <div class="portfolio-card">
+            <h3>Store</h3>
+
+            <p>
+                Manage books and digital products.
+            </p>
+
+            <a href="/catalog" class="btn">
+                View Store
+            </a>
+        </div>
+
+        <div class="portfolio-card">
+            <h3>Website</h3>
+
+            <p>
+                Monitor content and site growth.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div th:replace="~{fragments/footer :: footer}"></div>
+
+</body>
+</html>
