@@ -10,15 +10,133 @@
           content="Browse books, screenplays, digital products and creative publications from WRITERS WEB.">
 
     <link rel="stylesheet" href="/css/style.css">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EEMV6CCEES"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-EEMV6CCEES');
-    </script>
 </head>
 <body>
+
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+
+<section class="page-hero">
+
+    <h1>WRITERS WEB STORE</h1>
+
+    <div class="tagline">
+        Books • Screenplays • Digital Products
+    </div>
+
+    <p>
+        Explore original stories, screenplays, educational resources
+        and creative works crafted through imagination, storytelling
+        and innovation.
+    </p>
+
+</section>
+
+<section class="section">
+
+    <div class="section-title">
+        <h2>Featured Titles</h2>
+    </div>
+
+    <div class="catalog-grid">
+
+        <div class="book-card" th:each="book : ${books}">
+
+            <h3 th:text="${book.title}">
+                Book Title
+            </h3>
+
+            <p th:text="${book.description}">
+                Description
+            </p>
+
+            <span class="price" th:text="${book.price}">
+                $0.00
+            </span>
+
+            <a href="/book" class="btn">
+                View Details
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="portfolio-section">
+
+        <div class="portfolio-card">
+
+            <h2>Books</h2>
+
+            <p>
+                Original fiction, novels, storytelling projects
+                and creative publications.
+            </p>
+
+        </div>
+
+        <div class="portfolio-card">
+
+            <h2>Screenplays</h2>
+
+            <p>
+                Screenwriting projects, film concepts
+                and visual storytelling experiences.
+            </p>
+
+        </div>
+
+        <div class="portfolio-card">
+
+            <h2>Digital Products</h2>
+
+            <p>
+                Future templates, guides, resources,
+                online courses and educational materials.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="newsletter">
+
+        <h2>Join the WRITERS WEB Community</h2>
+
+        <p>
+            Receive updates on new books, screenplays,
+            digital products and exclusive releases.
+        </p>
+
+        <form class="newsletter-form">
+
+            <label for="email">Email Address</label>
+
+            <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter your email address"
+                    required>
+
+            <button class="btn" type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<div th:replace="~{fragments/footer :: footer}"></div>
+
+</body>
+</html>
