@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post | Admin</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+
+<section class="section">
+
+    <div class="section-title">
+        <h2>Edit Article</h2>
+    </div>
+
+    <form>
+
+        <label for="title">Title</label>
+        <input id="title" type="text" value="Sample Article">
+
+        <br><br>
+
+        <label for="excerpt">Excerpt</label>
+        <textarea id="excerpt" rows="4">
+Sample article summary...
+        </textarea>
+
+        <br><br>
+
+        <label for="content">Content</label>
+        <textarea id="content" rows="12">
+Article content goes here...
+        </textarea>
+
+        <br><br>
+
+        <button type="submit" class="btn">
+            Update Article
+        </button>
+
+    </form>
+
+</section>
+
+<div th:replace="~{fragments/footer :: footer}"></div>
+
+</body>
+</html>
