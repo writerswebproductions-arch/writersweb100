@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | WRITERS WEB</title>
+
+    <meta name="description"
+          content="Contact WRITERS WEB for writing, filmmaking, web development and creative collaboration opportunities.">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="1sWyQiga3HglUlQuorlQIt2yFyoVpteiReVtdy157vo" />
+
+    <!-- Google AdSense -->
+    <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2764169348032920"
+            crossorigin="anonymous"></script>
+
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EEMV6CCEES"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-EEMV6CCEES');
+    </script>
+</head>
+<body>
+
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+
+<section class="section">
+
+    <div class="section-title">
+        <h2>Contact WRITERS WEB</h2>
+
+        <p>
+            Let's discuss your project, creative collaboration,
+            website development or publishing opportunity.
+        </p>
+    </div>
+
+    <div class="contact-grid">
+
+        <!-- CONTACT FORM -->
+
+        <div class="contact-form-card">
+
+            <h3>Send a Message</h3>
+
+            <form>
+
+                <label for="name">Full Name</label>
+                <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Full Name"
+                        required>
+
+                <label for="email">Email Address</label>
+                <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="Email Address"
+                        required>
+
+                <label for="subject">Subject</label>
+                <input
+                        id="subject"
+                        name="subject"
+                        type="text"
+                        placeholder="Subject">
+
+                <label for="message">Message</label>
+                <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Your Message"
+                        required></textarea>
+
+                <button
+                        type="submit"
+                        class="btn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- CONTACT DETAILS -->
+
+        <div class="contact-info-card">
+
+            <h3>Contact Information</h3>
+
+            <p>
+                📧 Email:
+                <a href="mailto:your@email.com">
+                    your@email.com
+                </a>
+            </p>
+
+            <br>
+
+            <p>
+                📞 Phone:
+                Coming Soon
+            </p>
+
+            <br>
+
+            <p>
+                📍 Location:
+                Available Worldwide
+            </p>
+
+            <br>
+            <hr>
+            <br>
+
+            <h3>Social Media</h3>
+
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>X / Twitter</p>
+            <p>LinkedIn</p>
+            <p>YouTube</p>
+            <p>GitHub</p>
+
+            <br>
+
+            <p>
+                Social media links will be added here.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div th:replace="~{fragments/footer :: footer}"></div>
+
+</body>
+</html>

@@ -1,10 +1,25 @@
-<nav th:fragment="navbar">
-    <a href="/">Home</a>
-    <a href="/catalog">Store</a>
-    <a href="/portfolio">Portfolio</a>
-    <a href="/blog">Blog</a>
-    <a href="/services">Services</a>
-    <a href="/about">About</a>
-    <a href="/faq">FAQ</a>
-    <a href="/contact">Contact</a>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<nav th:fragment="navbar" class="navbar">
+
+    <a href="/" class="brand-link">
+        <img src="/images/logos/logo.png" alt="Writers Web" class="logo-img">
+        <span class="brand-name">Writers Web</span>
+    </a>
+
+    <div class="navbar-menu">
+        <a href="/">Home</a>
+        <a href="/catalog">Store</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/blog">Blog</a>
+        <a href="/services">Services</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </div>
+
 </nav>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts | Admin</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+
+<section class="section">
+
+    <div class="section-title">
+        <h2>Manage Posts</h2>
+    </div>
+
+    <p>
+        Future blog articles will appear here.
+    </p>
+
+    <br>
+
+    <a href="/admin/posts/new" class="btn">
+        New Article
+    </a>
+
+</section>
+
+<div th:replace="~{fragments/footer :: footer}"></div>
+
+</body>
+</html>

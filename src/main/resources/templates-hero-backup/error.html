@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | WRITERS WEB</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="1sWyQiga3HglUlQuorlQIt2yFyoVpteiReVtdy157vo" />
+
+    <!-- Google AdSense -->
+    <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2764169348032920"
+            crossorigin="anonymous"></script>
+
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EEMV6CCEES"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-EEMV6CCEES');
+    </script>
+</head>
+<body>
+
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+
+<section class="page-hero">
+
+    <h1>404</h1>
+
+    <div class="tagline">
+        The page you're looking for cannot be found.
+    </div>
+
+    <br>
+
+    <a href="/" class="btn">
+        Return Home
+    </a>
+
+</section>
+
+
+<div th:replace="~{fragments/footer :: footer}"></div>
+</body>
+</html>
+
